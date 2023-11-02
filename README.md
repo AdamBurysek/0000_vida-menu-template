@@ -7,8 +7,7 @@ Rozlišení 1920x1080. Menu není responzivní, tudíž se nepřispůsobí velik
 
 #
 
-
-
+![Snímek obrazovky 2023-11-02 v 14 35 18](https://github.com/AdamBurysek/0000_vida-menu-template/assets/114564710/d2577a47-21c6-4b52-b9f0-9e35ca813e1a)
 
 #
 
