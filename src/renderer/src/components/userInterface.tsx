@@ -1,4 +1,3 @@
-import ExhibitLabel from "../components/exhibitLabel";
 import SideButton from "../components/sideButton";
 import { CzechImage, EnglishImage, DeutschImage } from "../img/languageImages";
 import MapButton from "../components/mapButton";
@@ -34,14 +33,12 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
               sectionInfo={sectionInfo}
               language={language}
             ></SectionBadge>
-            <ExhibitLabel
-              exhibitInfo={setup}
-              language={language}
-            ></ExhibitLabel>
-            <button
-              className="language_select"
-              onClick={handleLanguageClick}
-            >
+            <h1 className="top-bar_heading">
+              {language === "cz" && setup.label.cz}
+              {language === "en" && setup.label.en}
+              {language === "de" && setup.label.de}
+            </h1>
+            <button className="language_select" onClick={handleLanguageClick}>
               {language === "de" && <CzechImage></CzechImage>}
               {language === "cz" && <EnglishImage></EnglishImage>}
               {language === "en" && <DeutschImage></DeutschImage>}
