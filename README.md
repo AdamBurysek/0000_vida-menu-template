@@ -1,4 +1,21 @@
-Webkamera Svpro SV-USB8MP02G-SFV
+# VIDA - Menu
+
+# Odkaz na web
+[https://adamplanet.cz/ostatniweby/vidamenu/](https://adamplanet.cz/ostatniweby/vidamenu/)
+
+Rozlišení 1920x1080. Menu není responzivní, tudíž se nepřispůsobí velikosti okna prohlížeče.
+
+#
+
+
+
+
+#
+
+#
+
+#
+
 
 # electron-app
 
