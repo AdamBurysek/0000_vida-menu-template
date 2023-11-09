@@ -25,7 +25,13 @@ const SideButton: React.FC<SideButtonProps> = ({
       onClick={onClick}
       id={className}
     >
-      <div className={`side-button_icon`}>
+      <div
+        className={
+          className === "how-to"
+            ? "side-button_icon side-button_how-to_icon"
+            : "side-button_icon"
+        }
+      >
         {className === "home" && (
           <Home
             className={className}
@@ -59,7 +65,13 @@ const SideButton: React.FC<SideButtonProps> = ({
           strokeWidth="4"
         />
       </svg>
-      <div className="side_button-text_container">
+      <div
+        className={
+          className === "how-to"
+            ? "side_button-text_container side_button-text_how-to "
+            : "side_button-text_container"
+        }
+      >
         {className === "home" && language === "en" && (
           <span className="side_button-text">Home</span>
         )}
@@ -73,7 +85,7 @@ const SideButton: React.FC<SideButtonProps> = ({
           <span className="side_button-text">How-to</span>
         )}
         {className === "how-to" && language === "cz" && (
-          <span className="side_button-text">Jak na to</span>
+          <span className="side_button-text ">Jak na to</span>
         )}
         {className === "how-to" && language === "de" && (
           <span className="side_button-text">Wie man</span>
