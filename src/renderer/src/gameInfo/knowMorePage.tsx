@@ -1,12 +1,12 @@
 import "./knowMorePage.css";
 import { useEffect, useRef } from "react";
 
-interface KnowMorePageProps {
-  activePage: string;
-  language: string;
-}
+// interface KnowMorePageProps {
+//   activePage: string;
+//   language: string;
+// }
 
-const KnowMorePage: React.FC<KnowMorePageProps> = (props) => {
+const KnowMorePage = (props: any) => {
   const knowMoreElement = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

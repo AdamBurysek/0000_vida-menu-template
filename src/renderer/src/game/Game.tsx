@@ -8,7 +8,7 @@ interface GameProps {
   isActive: boolean;
 }
 
-function Game(props: GameProps) {
+function Game(props: any) {
   return (
     <AppGame
       language={props.language}

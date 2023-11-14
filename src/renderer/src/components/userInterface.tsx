@@ -4,6 +4,7 @@ import MapButton from "../components/mapButton";
 import SectionBadge from "../components/sectionBadge";
 import setup from "../../setup.json";
 import "../App.css";
+import BlackPage from "./blackPage";
 
 interface UserInterfaceProps {
   children: React.ReactNode;
@@ -38,7 +39,10 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
               {language === "en" && setup.label.en}
               {language === "de" && setup.label.de}
             </h1>
-            <button className="language_select" onClick={handleLanguageClick}>
+            <button
+              className="language_select"
+              onClick={handleLanguageClick}
+            >
               {language === "de" && <CzechImage></CzechImage>}
               {language === "cz" && <EnglishImage></EnglishImage>}
               {language === "en" && <DeutschImage></DeutschImage>}
@@ -76,6 +80,7 @@ const UserInterface: React.FC<UserInterfaceProps> = ({
           </div>
         </div>
         <div>{children}</div>
+        <BlackPage></BlackPage>
       </div>
     </>
   );
