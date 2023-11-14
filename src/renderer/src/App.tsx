@@ -8,19 +8,11 @@ import setup from "../setup.json";
 function App() {
   return (
     <>
-      <VidaMenu
-        section={setup.section}
-        exhibitionName={setup.label}
-      >
+      <VidaMenu setup={setup}>
         <Game></Game>
         <HowToPage></HowToPage>
         <KnowMorePage></KnowMorePage>
       </VidaMenu>
-      {/* <VidaMenu>
-        <Game></Game>
-        <HowToPage></HowToPage>
-        <KnowMorePage></KnowMorePage>
-      </VidaMenu> */}
     </>
   );
 }
