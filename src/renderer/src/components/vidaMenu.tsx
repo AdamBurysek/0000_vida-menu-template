@@ -1,7 +1,7 @@
 import UserInterface from "../components/userInterface";
 import React, { useEffect, useState } from "react";
-import HowToPage from "../gameInfo/howToPage";
-import KnowMorePage from "../gameInfo/knowMorePage";
+// import HowToPage from "../gameInfo/howToPage";
+// import KnowMorePage from "../gameInfo/knowMorePage";
 import MapPage from "../components/mapPage";
 import { findSection, switchLanguage } from "../utils/functions";
 import setup from "../../setup.json";
@@ -10,12 +10,8 @@ interface AdditionalGameProps {
   gameStarts: boolean;
   isActive: boolean;
   language: string;
-  setGameStarts: () => void;
-}
-
-interface AdditionalInfoPagesProps {
-  language: string;
   activePage: string;
+  setGameStarts: () => void;
 }
 
 function VidaMenu({ children }) {
@@ -71,16 +67,20 @@ function VidaMenu({ children }) {
     setActivePage(buttonId);
   }
 
+  //   const HowToPage = ({ children }) => {
+  //     return <div>{children}</div>;
+  //   };
+
   const addAdditionalProps = (child: React.ReactNode) => {
     // Check if the child is a valid React element
     if (React.isValidElement(child)) {
       // If the child is HowToPage or KnowMorePage, add specific props
-      if (child.type === HowToPage || child.type === KnowMorePage) {
-        return React.cloneElement(child, {
-          activePage,
-          language,
-        } as AdditionalInfoPagesProps);
-      }
+      //   if (child.type === HowToPage || child.type === KnowMorePage) {
+      //     return React.cloneElement(child, {
+      //       activePage,
+      //       language,
+      //     } as AdditionalInfoPagesProps);
+      //   }
 
       // Clone the child and add general props
       return React.cloneElement(child, {
@@ -88,6 +88,7 @@ function VidaMenu({ children }) {
         setGameStarts,
         language,
         isActive,
+        activePage,
       } as AdditionalGameProps);
     }
 
