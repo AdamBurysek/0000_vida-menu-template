@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dimenze-Bold";
+  src: url("./fonts/Dimenze-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Dimenze-Regular";
+  src: url("./fonts/Dimenze-Regular.otf") format("opentype");
+}
+
 .button-container {
   position: relative;
   display: flex;
