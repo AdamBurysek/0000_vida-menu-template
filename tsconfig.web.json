@@ -19,6 +19,5 @@
   "files": [
     // other files...
     "src/renderer/setup.json",
-    "src/renderer/src/data/sectionsData.json",
   ]
 }

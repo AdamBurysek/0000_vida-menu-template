@@ -1,14 +1,15 @@
 {
   "server": false,
-  "id": "131",
+  "id": "0000",
   "section": "planet",
   "label": {
     "cz": "název expozice",
     "en": "exhibition title",
-    "de": "Ausstellungstitel"
+    "de": "ausstellungstitel"
   },
   "x": 50,
   "y": 50,
+  "inactivityTimeoutInMin": 3.5,
   "port": "/dev/ttyUSB0",
   "baudrate": 9600
 }
