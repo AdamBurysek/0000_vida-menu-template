@@ -6,6 +6,8 @@ function App(props: any) {
     props.setGameStarts(!props.gameStarts);
   }
 
+  console.log(props.sectionInfo.color);
+
   return (
     <div
       style={{
@@ -40,6 +42,13 @@ function App(props: any) {
           onClick={handleShowUiClick}
         >
           Show/Hide UI
+        </button>
+        <button
+          className="test-button"
+          disabled
+          style={{ backgroundColor: props.sectionInfo.color }}
+        >
+          Section Color
         </button>
       </div>
     </div>

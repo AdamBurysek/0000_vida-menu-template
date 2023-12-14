@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./howToPage.css";
+import "./infoPages.css";
 
 const HowToPage = (props: any) => {
   const howToElement = useRef<HTMLDivElement>(null);
