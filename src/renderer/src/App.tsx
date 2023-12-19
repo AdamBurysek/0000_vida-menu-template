@@ -6,8 +6,6 @@ function App(props: any) {
     props.setGameStarts(!props.gameStarts);
   }
 
-  console.log(props.sectionInfo.color);
-
   return (
     <div
       style={{
